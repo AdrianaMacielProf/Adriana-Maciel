@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seu Nome | Contato</title>
+  <style>
+    /* Paleta: nude, preto, branco */
+    :root {
+      --nude: #f4e8dd;
+      --black: #000000;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--nude);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--black);
+      font-weight: bold;
+      font-size: 1em;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--black);
+      display: inline-block;
+    }
+
+    .projetos ul,
+    .devaneios ul {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .projetos li,
+    .devaneios li {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+
+    .contato p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Seu Nome</h1>
+    <nav>
+      <a href="#contatos">Contatos</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#devaneios">Devaneios</a>
+    </nav>
+  </header>
+
+  <section id="contatos" class="contato">
+    <h2>Contatos</h2>
+    <p>Email: seuemail@exemplo.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/seuperfil" target="_blank">linkedin.com/in/seuperfil</a></p>
+    <p>Instagram: <a href="https://instagram.com/seuperfil" target="_blank">@seuperfil</a></p>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <h2>Projetos Acompanhados</h2>
+    <ul>
+      <li>Projeto 1 – breve descrição ou papel no projeto</li>
+      <li>Projeto 2 – breve descrição ou papel no projeto</li>
+      <li>Projeto 3 – breve descrição ou papel no projeto</li>
+    </ul>
+  </section>
+
+  <section id="devaneios" class="devaneios">
+    <h2>Meus Devaneios</h2>
+    <ul>
+      <li>Reflexão sobre criatividade e propósito</li>
+      <li>Ideias sobre o futuro do trabalho</li>
+      <li>Devaneios sobre design e sensibilidade</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
